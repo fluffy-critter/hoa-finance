@@ -1,0 +1,56 @@
+table {
+    border-collapse: collapse;
+    border: solid black 1px;
+    clear: right;
+}
+
+th { text-align: left; padding: 0.2ex 0.5ex; }
+td { text-align: right; padding: 0.2ex 0.5ex; }
+td.note { text-align: left; }
+
+table tr.head {
+    background: #ccf;
+    border-bottom: solid black 1px;
+}
+
+table th {
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+}
+
+table tr.foot { background: #cfc; }
+table tr.even th { background: #fcf; }
+table tr.odd th { background: #fef; }
+table td.currency { text-align: right; }
+table tr.foot { border-top: solid black 3px; }
+table td {
+    border-bottom: solid #777 1px; 
+    border-right: solid #777 1px;
+}
+table tr.odd { background: #eee; }
+table tr.even { background: #ccc; }
+table tr.selected { background: #ffc; }
+
+table tr.foot td.negative { background: #fcc; }
+
+#login input {
+    display: block;
+}
+
+#menu {
+    float: right;
+    border: solid black 1px;
+    margin: 1ex;
+    padding: 1ex;
+    background: #ccc;
+}
+
+span.op { font-size: xx-small; }
+
+h1 { display: none; }
+
+@media print {
+    h1 { display: block; }
+    form { display: none; }
+    #menu { display: none; }
+}
